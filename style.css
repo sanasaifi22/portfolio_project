@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+#header{
+    height:100%;
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav h1{
+    color: white;
+    font-size: 60px;
+}
+a{
+    color: white;
+}
+#container{
+    padding:30px;
+    margin-left:20px
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 13px 46px;
+    font-size: 20px;
+}
+nav ul li i{
+    color: white;
+}
+  /* About section*/
+  #about{
+    padding: 50px 0px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .about-col-1 {
+    margin-left: 190px;
+  }
+.about-col-1 h3{
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+}
+.about-col-1 span{
+    font-size: 40px;
+    color: red;
+}
+.about-col-1 h1{
+    font-size: 36px;
+    color: white;
+    margin-top: 10px;
+}
+.about-col-1 p{
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.about-col-2 img{
+    margin-right: 60px;
+    margin-top: 70px;
+    animation: floatimage 2s ease-in-out infinite;
+}
+@keyframes floatimage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+/*    service  section*/
+.heading {
+    font-size: 60px;
+    margin-bottom: 14px;
+    margin-left: 16px;
+    color: white;
+}
+ .heading span{
+    color: white;
+    font-size: 60px;
+}
+
+
+.services-box h3{
+    color: white;
+    font-size: 30px;
+}
+.services-box p{
+color: white;
+
+margin-top: 10px;
+}
+.services-box i{
+    color:white;
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+/*.btn{
+    color: white;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}*/
+.btn {
+    display: inline-block;
+    background: #ff004f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: white;
+    color: #ff004f;
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.services-container .services-box{
+    background-color:#262626;
+    padding: 40px;
+    transition: background 0.5s ,transform 0.5s;
+}
+.services-container .services-box:hover{
+    background: #ff004f;
+    transform:  translateY(-10px);
+}
+                     /*my portfolio*/
+h2{
+    color: white;
+    font-size: 60px ;
+} 
+.work img{
+    height: 200px;
+    width:250px;
+    border-radius: 25px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    top: 70px;
+    margin-left: 60px;
+    overflow: hidden;
+}
+.layer p{
+
+    color: white;
+}
+h3{
+    color: aliceblue;
+}
+     /*Contacy section*/
+h1{
+    color: white;
+    font-size: 50px;
+ } 
+.conatact-container form{
+    text-align: center;
+    max-width: 78rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.conatact-container form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.conatact-container form .input-box,
+.conatact-container form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    
+}
+.conatact-container form .input-box input{
+    width:40%;
+    height:60px
+
+}
+
+.conatact-container form textarea{
+    resize: none;
+}
+.conatact-container .btn{
+    margin: 2rem;
+    cursor: pointer;
+}
+/* footer design*/
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* css for small screen*/
